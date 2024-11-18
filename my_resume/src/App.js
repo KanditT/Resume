@@ -3,16 +3,16 @@ import "./App.css";
 import { FiDownload } from "react-icons/fi";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setMenuOpen(!menuOpen);
+  // };
 
   return (
     <div className="main-feild">
 
-      <div className="header">
+      {/* <div className="header">
         <div className="my-n-r">
           <h1 className="name">Ming</h1>
           <p className="role">Creator</p>
@@ -33,7 +33,7 @@ function App() {
             Contact
           </a>
         </div>
-      </div>
+      </div> */}
 
       <div className="my-info">
         <div></div>
