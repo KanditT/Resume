@@ -57,8 +57,8 @@ export default function ExperienceCards() {
         {
             title: "2023 Freshmen Orientation",
             date: "June 2023",
-            project: "Bachelor’s in Computer Engineering, Khon Kaen University",
             details: [
+                "Bachelor’s in Computer Engineering, Khon Kaen University",
                 "Prepared slides to guide and support freshmen, providing essential information.",
             ],
             icons: [],
