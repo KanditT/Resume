@@ -1,83 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .main-feild {
   font-family: Arial, sans-serif;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-}
-
-/* Header Section */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  position: relative;
-  
-}
-
-.my-n-r {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 20px;
-}
-.name {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.role {
-  font-size: 18px;
-  color: #666;
-  
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.bar {
-  height: 3px;
-  width: 100%;
-  background-color: #333;
-}
-
-.nav {
-  display: none; 
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.nav.open {
-  display: flex;
-}
-
-.nav-link {
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #333;
-  font-weight: 500;
-  border-bottom: 1px solid #ddd;
-}
-
-.nav-link:last-child {
-  border-bottom: none;
-}
-
-.nav-link:hover {
-  background-color: #f0f0f0;
 }
 
 /* INFORMATION */
@@ -144,7 +73,7 @@
   background-color: #fdb813;
 }
 .button:hover {
-  background-color: #9af41c;
+  background-color: #c18700;
 }
 .button.resume{
   display: flex;
@@ -152,26 +81,19 @@
   gap: 10px;
 }
 
+.skills-section {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
 /* Large Screen */
 @media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
 
-  .nav {
-    display: flex;
-    position: static;
-    flex-direction: row;
-    gap: 20px;
-    box-shadow: none;
-    background-color: transparent;
-    border-radius: 0;
-  }
-
-  .nav-link {
-    padding: 0;
-    border-bottom: none;
-  }
 }
 
 /* Larger Screen */

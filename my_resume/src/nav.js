@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./nav.css";
+import ExperienceCards from './ProjectCard';
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,31 +10,30 @@ function Nav() {
     };
 
     return (
-        <div className="navbox">
-            
-                <div className="header">
-                    <div className="my-n-r">
-                        <h1 className="name">Ming</h1>
-                        <p className="role">Creator</p>
-                    </div>
-                    <div className="hamburger" onClick={toggleMenu}>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                    </div>
-                    <div className={`nav ${menuOpen ? "open" : ""}`}>
-                        <a href="#resume" className="nav-link">
-                            Resume
-                        </a>
-                        <a href="#projects" className="nav-link">
-                            Projects
-                        </a>
-                        <a href="#contact" className="nav-link">
-                            Contact
-                        </a>
-                    </div>
+        <div id="ming" className="navbox">
+            <div className="header">
+                <a href="#ming" className="my-n-r">
+                    <h1 className="name">Ming</h1>
+                    <p className="role">Creator</p>
+                </a>
+                <div className="hamburger" onClick={toggleMenu}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
                 </div>
-            
+                <div className={`nav ${menuOpen ? "open" : ""}`}>
+                    <a href="#educations" className="nav-link">
+                        Educations
+                    </a>
+                    <a href="#skills" className="nav-link">
+                        Skills
+                    </a>
+                    <a href="#projects" className="nav-link">
+                        Experiences
+                    </a>
+                </div>
+            </div>
+
         </div>
 
     );

@@ -1,26 +1,24 @@
 .navbox{
-    padding: 0 0  0 20px; 
-    height: 100px;
+    /* padding: 0 20px 0  0;  */
+    height: 76px;
     max-width: 1200px;
     margin: auto;
     font-family: Arial, sans-serif;
 }
 /* Header Section */
 .header {
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
-    position: fixed; /* Make the header fixed */
-    width: calc(100% - 80px); /* Take full width of the page */
+    position: fixed; 
+    width: calc(100%); 
     top: 0px;
-    max-width: 1160px;
-    z-index: 1000; /* Ensure it stays above other elements */
-    background-color: white; /* Add a background color to avoid overlap issues */
-    padding: 20px; /* Optional: Add padding to maintain spacing */
+    max-width: 1200px;
+    z-index: 1000;
+    background-color: white; 
+    padding: 20px;
 }
-
 
 .my-n-r {
     display: flex;
