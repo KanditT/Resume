@@ -52,7 +52,7 @@ function App() {
       <div  id="educations" className="my-overview scroll-m-24 mt-20 flex flex-col md:flex-row">
         {/* Education */}
         <div className="my-history flex-auto max-w-sm ">
-          <h1 className="my-education text-3xl font-bold">Education</h1>
+          <h1 className="my-education text-3xl font-bold">Educations</h1>
           <div className="flex flex-col gap-3 my-6 ">
             <EducationCard
               title="Bachelor of Computer Engineering"
@@ -71,32 +71,32 @@ function App() {
           </div>
           {/* SKILLS */}
           <div  className="flex flex-row gap-3 max-w-sm ">
-            <h1 id="skills" className="scroll-m-24 text-3xl font-semibold">Skills</h1>
+            <h1 id="skills" className="scroll-m-24 text-3xl font-semibold ">Skills</h1>
             <div className="flex gap-4">
               <button
-                className={`px-4 rounded-lg border hover:bg-green-200 transition-colors ${activeSkill === "intermediate"
-                  ? "bg-green-500 text-white border-red-500"
-                  : "bg-gray-100 text-gray-800 border-gray-300"
+                className={`px-4 rounded-lg border hover:bg-green-200 hover:text-black transition-colors ${activeSkill === "intermediate"
+                  ? "bg-green-500 text-white border-orange-500 border-2"
+                  : "bg-blue-600 text-white border-gray-300"
                   }`}
                 onClick={() => handleButtonClick("intermediate")}
               >
                 Intermediate
               </button>
               <button
-                className={`px-4 rounded-lg border hover:bg-orange-200  transition-colors ${activeSkill === "beginner"
-                  ? "bg-orange-400 text-white border-red-500"
-                  : "bg-gray-100 text-gray-800 border-gray-300"
+                className={`px-4 rounded-lg border hover:bg-orange-200 hover:text-black transition-colors ${activeSkill === "beginner"
+                  ? "bg-orange-400 text-white border-red-500 border-2"
+                  : "bg-blue-600 text-white border-gray-300"
                   }`}
                 onClick={() => handleButtonClick("beginner")}
               >
-                beginner
+                Beginner
               </button>
             </div>
           </div>
           <div className="my-6 max-w-sm">
             <div className="mb-6 p-0">
               {[
-                { name: "Thai", bg: "bg-blue-400 text-white" },
+                { name: "Thai", bg: "bg-gray-400 text-white" },
                 { name: "English", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
                 { name: "Java", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
                 { name: "Python", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
@@ -133,7 +133,7 @@ function App() {
           {/* Experaince */}
         </div>
         <div className="my-experience flex-auto">
-          <h1 id="projects" className="projects-title scroll-m-24 text-3xl font-semibold pl-6">Experiences</h1>
+          <h1 id="projects" className="projects-title scroll-m-24 text-3xl font-semibold pl-6 flex justify-center">Experiences</h1>
           <div className="projects-container">
             <ProjectCard />
           </div>

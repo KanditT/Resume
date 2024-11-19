@@ -70,12 +70,15 @@ html {
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #fdb813;
+  background: linear-gradient(to right, #0056a9, #000); 
+  transition: background 0.5s ease;
 }
+
 .button:hover {
-  background-color: #c18700;
+  background: linear-gradient(to right, #000, #0056a9);
 }
-.button.resume{
+
+.button.resume {
   display: flex;
   align-items: center;
   gap: 10px;
