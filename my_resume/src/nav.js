@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./nav.css";
-import ExperienceCards from './ProjectCard';
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
