@@ -32,7 +32,7 @@ export default function ExperienceCards() {
         },
         {
             title: "Adv Computer Programming",
-            date: "Nov 2022 - Mar 2022",
+            date: "Nov 2022 - Mar 2023",
             project: "EN-Library (Web - App KKU Engineer Library)",
             details: [
                 "UX/UI Design and Frontend Development",
