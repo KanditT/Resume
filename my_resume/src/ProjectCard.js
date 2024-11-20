@@ -1,5 +1,5 @@
 import React from "react";
-import { FaYoutube, FaSlideshare, FaVideo, FaFileAlt, FaFacebookF, FaGlobe } from "react-icons/fa";
+import { FaYoutube, FaSlideshare, FaVideo, FaFileAlt, FaFacebookF, FaGlobe, FaGithub } from "react-icons/fa";
 
 export default function ExperienceCards() {
     const cards = [
@@ -73,6 +73,21 @@ export default function ExperienceCards() {
             ],
             icons: [],
         },
+        {
+            title: "Resume Website",
+            date: "18 Nov 2024 - 20 Nov 2024",
+            details: [
+                "Create a personal resume website using React and Tailwind CSS.",
+                "Navbar add in index.js, and components are created in the components folder.",
+                "MYSELF uses pure css and flexbox to design the layout.",
+                "Educations use Tailwind CSS to design the layout. Also, card's a custom reusable component (EducationCard) that accepts various props",
+                "Skills have Interactive buttons to filter displayed skills based on proficiency level and using map to auto generating skill tag.",
+                "Experiences created in seperated file (ExperienceCards are Dynamic Rendering that can edit in ProjectCard.js) and import to app.js to display.",
+            ],
+            icons: [
+                { icon: <FaGithub size={20} className="text-black hover:text-blue-400"/>, link: "https://github.com/KanditT/Resume.git" },
+            ],
+        }
     ];
 
     return (

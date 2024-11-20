@@ -20,6 +20,7 @@ function App() {
 
   return (
     <div className="main-feild">
+      {/* MYSELF */}
       <div className="my-info">
         <div></div>
         <div className="my-picture">
