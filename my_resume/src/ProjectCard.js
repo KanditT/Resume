@@ -92,11 +92,11 @@ export default function ExperienceCards() {
     ];
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-6 ">
             {cards.map((card, index) => (
                 <div
                     key={index}
-                    className="p-6 bg-white border border-gray-300 rounded-lg shadow-md flex flex-col justify-between"
+                    className="p-6 bg-white border border-gray-300 rounded-lg shadow-md flex flex-col justify-between hover:scale-110 transition-all ease-out duration-300"
                 >
                     <div>
                         <h3 className="text-xl font-bold text-gray-800">{card.title}</h3>

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./App.css";
 import { FiDownload } from "react-icons/fi";
 import EducationCard from "./EducationCard";
@@ -6,18 +5,6 @@ import ProjectCard from "./ProjectCard";
 import SkillCard from "./SkillCard";
 
 function App() {
-  const [activeSkill, setActiveSkill] = useState(""); 
-  const [skillType, setSkillType] = useState(""); 
-
-  const handleButtonClick = (type) => {
-    if (activeSkill === type) {
-      setActiveSkill("");
-      setSkillType("");
-    } else {
-      setActiveSkill(type);
-      setSkillType(type);
-    }
-  };
 
   return (
     <div className="main-feild">
@@ -48,9 +35,7 @@ function App() {
           </div>
         </div>
       </div>
-
       {/* INFORMATION */}
-
       <div  id="educations" className="my-overview scroll-m-24 mt-20 flex flex-col md:flex-row">
         {/* Education */}
         <div className="my-history flex-auto max-w-sm ">
@@ -72,68 +57,12 @@ function App() {
             />
           </div>
           {/* SKILLS */}
-          <div  className="flex flex-row gap-3 max-w-sm ">
+          <div  className="flex flex-row gap-3 max-w-sm  ">
             
             <h1 id="skills" className="scroll-m-24 text-3xl font-semibold  mb-6">Skills</h1>
-            {/* <div className="flex gap-4">
-              <button
-                className={`px-4 rounded-lg border hover:bg-green-200 hover:text-black transition-colors ${activeSkill === "intermediate"
-                  ? "bg-green-500 text-white border-orange-500 border-2"
-                  : "bg-blue-600 text-white border-gray-300"
-                  }`}
-                onClick={() => handleButtonClick("intermediate")}
-              >
-                Intermediate
-              </button>
-              <button
-                className={`px-4 rounded-lg border hover:bg-orange-200 hover:text-black transition-colors ${activeSkill === "beginner"
-                  ? "bg-orange-400 text-white border-red-500 border-2"
-                  : "bg-blue-600 text-white border-gray-300"
-                  }`}
-                onClick={() => handleButtonClick("beginner")}
-              >
-                Beginner
-              </button>
-            </div> */}
+ 
           </div>
           <SkillCard />
-          {/* <div className="my-6 max-w-sm">
-            <div className="mb-6 p-0">
-              {[
-                { name: "Thai", bg: "bg-gray-400 text-white" },
-                { name: "English", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "Java", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "Python", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "GDScript", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "SQL", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "Flutter", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "C#", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "Assembly", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "HTML", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "CSS", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "JS", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "Tailwind", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "MySQL", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "React", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "Photoshop", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "Godot", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "Figma", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "Unity", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "Illustrator", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "Adaptability", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "Communication", bg: skillType === "beginner" ? "bg-orange-400 text-white" : "bg-gray-100" },
-                { name: "Embracing", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-                { name: "Time Management", bg: skillType === "intermediate" ? "bg-green-500 text-white" : "bg-gray-100" },
-              ].map((skill) => (
-                <span
-                  key={skill.name}
-                  className={`inline-block px-4 py-2 border rounded-lg text-sm m-1 ${skill.bg}`}
-                >
-                  {skill.name}
-                </span>
-              ))}
-            </div>
-          </div> */}
           {/* Experaince */}
         </div>
         <div className="my-experience flex-auto">
