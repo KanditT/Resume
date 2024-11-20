@@ -76,8 +76,9 @@ export default function ExperienceCards() {
         {
             title: "Resume Website",
             date: "18 Nov 2024 - 20 Nov 2024",
+            project: "Create a personal resume website using React and Tailwind CSS.",
             details: [
-                "Create a personal resume website using React and Tailwind CSS.",
+                "This website is a personal resume that showcases my skills, experiences, and education. Moreover, it is a project that demonstrates my ability to design and develop a responsive website.",
                 "Navbar add in index.js, and components are created in the components folder.",
                 "MYSELF uses pure css and flexbox to design the layout.",
                 "Educations use Tailwind CSS to design the layout. Also, card's a custom reusable component (EducationCard) that accepts various props",
