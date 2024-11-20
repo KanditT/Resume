@@ -8,7 +8,7 @@ export default function ExperienceCards() {
             date: "June 2024 - Oct 2024",
             project: "ChatCane (Web Chatbot for Sugarcane Information)",
             details: [
-                "Role: UX/UI Designer and Frontend Developer (React & Tailwind)",
+                <>Role: UX/UI Designer and <span className="text-pink-400">Frontend Developer</span> (React & Tailwind)</>,
                 "Objective: Design and implement necessary functionalities for an engaging, informative chatbot experience.",
             ],
             icons: [
@@ -36,7 +36,7 @@ export default function ExperienceCards() {
             project: "EN-Library (Web - App KKU Engineer Library)",
             details: [
                 "UX/UI Design and Frontend Development",
-                "Create 3D models for a clear visualization of selectable library rooms.",
+                <>Create<span className="text-pink-400"> 3D model</span> for a clear visualization of selectable library rooms.</>,
             ],
             icons: [
                 { icon: <FaGlobe size={20} />, link: "https://en-library.kku.ac.th/" },
@@ -47,8 +47,8 @@ export default function ExperienceCards() {
             title: "Computer Engineering Summer Camp (CESCa)",
             date: "April 2023 & May 2024",
             details: [
-                "CESCa18: Staff, Funding Department",
-                "CESCa19: Staff, Accounting Management Department",
+                <>CESCa18: Staff,  <span className="text-pink-400">Funding Department</span></>,
+                <>CESCa19: Staff,  <span className="text-pink-400">Accounting Management Department</span></>,
             ],
             icons: [
                 { icon: <FaFacebookF size={20} />, link: "https://www.facebook.com/CESCa.KKU" },
